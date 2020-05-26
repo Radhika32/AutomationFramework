@@ -356,7 +356,7 @@ public class TestBase {
             }
 
             e_driver.register(event_Listner);
-            // driver.get("\https://freecrm.co.in/");
+            driver.get("//https://freecrm.co.in/");
             driver.findElement(By.xpath("//span[contains(text(),'Log In')]")).click();
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();

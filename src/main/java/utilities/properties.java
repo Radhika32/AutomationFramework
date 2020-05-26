@@ -6,18 +6,18 @@ import java.io.FileNotFoundException;
 public class properties {
     public void load(FileInputStream ip) throws FileNotFoundException {
         System.getProperty("webdriver.chrome.driver", "C:\\driver.chromedriver.exe");
-        new FileInputStream("");
+        new FileInputStream("https://freecrm.co.in/");
         getProperty().chars();
         new FileInputStream( "constant");
     }
 
     public String getProperty(String browser) {
-        String s = "browser";
+        String s = "chromeDriver";
         return s;
     }
 
     public String getProperty() {
-        getProperty(" String");
-   return( "String");
+        getProperty("UserName","password")
+   return( " ch.radhika5@gmail.com","1517");
     }
 }
