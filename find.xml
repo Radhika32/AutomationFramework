@@ -1,7 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'Automation framework'" />
-    <option name="defaultScopeName" value="Project 'Automation framework'" />
-    <option name="SEARCH_SCOPE" value="Project 'Automation framework'" />
+    <option name="customScope" value="test" />
+    <option name="defaultScopeName" value="test" />
+    <option name="SEARCH_SCOPE" value="test" />
+    <option name="FILE_MASK" value="*.java" />
   </component>
 </application>
