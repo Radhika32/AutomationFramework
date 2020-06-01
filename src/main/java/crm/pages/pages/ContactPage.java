@@ -5,31 +5,30 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class ContactPage extends TestBase {
+public class ContactPage {
 
-    @FindBy(xpath="//div[@class='ui header item mb5 light-black']")
+    @FindBy(xpath = "//div[@class='ui header item mb5 light-black']")
     WebElement contactpagelable;
 
-    @FindBy(xpath="//*[@id=\"ui\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td[1]/div")
+    @FindBy(xpath = "//*[@id=\"ui\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td[1]/div")
     WebElement checkbox2;
 
-    @FindBy(name="first_name")
+    @FindBy(name = "first_name")
     WebElement firstname;
 
-    @FindBy(name="last_name")
+    @FindBy(name = "last_name")
     WebElement lastname;
 
-    @FindBy(xpath="//div[@name='company']")
+    @FindBy(xpath = "//div[@name='company']")
     WebElement cmpny;
 
-    @FindBy(xpath="//button[@class=\"ui linkedin button\"]")
+    @FindBy(xpath = "//button[@class=\"ui linkedin button\"]")
     WebElement save;
 
     public ContactPage() {
+        super(fileInputStream, file);
         PageFactory.initElements(driver, this);
     }
 
@@ -38,14 +37,14 @@ public class ContactPage extends TestBase {
     }
 
     public void selectContactsByCount(int count) {
-        driver.findElement(By.xpath("//*[@id=\"ui\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr["+ count +"]/td[1]/div")).click();
+        driver.findElement(By.xpath("//*[@id=\"ui\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[" + count + "]/td[1]/div")).click();
     }
 
     public void creatNewContact(String ftname, String ltname, String cmp) {
         firstname.sendKeys(ftname);
         lastname.sendKeys(ltname);
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("arguments[0].value='"+cmp+"';", cmpny);
+        executor.executeScript("arguments[0].value='" + cmp + "';", cmpny);
         //cmpny.sendKeys(cmp);
         save.click();
 

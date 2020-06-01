@@ -1,4 +1,8 @@
 package crm.pages.pages;
-public class TaskPage extends TestBase{
 
+public class TaskPage {
+
+    public TaskPage() {
+        super(fileInputStream, file);
+    }
 }

@@ -1,8 +1,0 @@
-<application>
-  <component name="CodeInsightSettings">
-    <EXCLUDED_PACKAGE NAME="" />
-  </component>
-  <component name="EditorSettings">
-    <option name="USE_SOFT_WRAPS" value="CONSOLE:PREVIEW" />
-  </component>
-</application>

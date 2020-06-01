@@ -1,24 +1,26 @@
 package crm.pages.pages;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-import crm.pages.TestBase;
-import crm.pages.DealsPage;
 
-public class DealsPage extends TestBase{
+public class dealspage {
 
-    @FindBy(xpath="//div[@class='ui header item mb5 light-black']")
+    @FindBy(xpath = "//div[@class='ui header item mb5 light-black']")
     WebElement dealspagelable;
 
-    @FindBy(xpath="//input[@type='text']")
+    @FindBy(xpath = "//input[@type='text']")
     WebElement searchbar;
 
-    @FindBy(xpath="//a[contains(text(),'Aswath Whitebox')]")
+    @FindBy(xpath = "//a[contains(text(),'Shabdh ')]")
     WebElement result;
 
-    public DealsPage() {
+    public dealspage() {
+        super(fileInputStream, file);
+    }
+
+    public void DealsPage() {
         PageFactory.initElements(driver, this);
     }
 
