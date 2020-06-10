@@ -34,14 +34,13 @@ public class DealsPageTest extends BaseTest {
 	@Test//(priority = 2)
 	public void verifySearchbarTest() {
 		
-		Assert.assertEquals(dp.verifySearchBar("Radhika c"), "Radhika ");
+		Assert.assertEquals(dp.verifySearchBar("Radhika"), "Radhika c");
 	}
 
 
 	@AfterMethod
 	public void tearDown() {
-
-	    driver.quit();
+		driver.quit();
 	}
 
 }

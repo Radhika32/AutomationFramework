@@ -43,7 +43,7 @@ TaskPage tp;
 @Test
     private HomePage validateLoginPage(String username, String password) throws NullPointerException {
 
-        driver.findElement(xpath("//input[@type='text'][@name='emailid']")).sendKeys("username");
+        driver.findElement(xpath("//input[@type='username'][@name='username']")).sendKeys("username");
     driver.findElement(xpath("//input[@type='password'][@name='password']")).sendKeys("password");
     return loginTest(prop.getProperty("emailid"), prop.getProperty("password"));
 }
